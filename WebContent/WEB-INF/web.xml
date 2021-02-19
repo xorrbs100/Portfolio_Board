@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Portfolio_Admin_Member</display-name>
+  <servlet>
+  	<servlet-name>front</servlet-name>
+  	<servlet-class>controller.FrontController</servlet-class>	<!-- FrontController 서블릿을 font이름으로 웹서버 등록 -->
+  	<init-param>
+  		<param-name>charset</param-name>
+  		<param-value>UTF-8</param-value>		<!-- FrontController 서블릿에 charset=UTF-8 변수지정 -->
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>front</servlet-name>
+  	<url-pattern>*.do</url-pattern>			<!-- front서블릿의 url요청정보가 .do로 끝날때마다 실행 -->
+  </servlet-mapping>
+  <welcome-file-list>
+
+    <welcome-file>index.jsp</welcome-file>
+
+  </welcome-file-list>
+</web-app>
