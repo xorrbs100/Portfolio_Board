@@ -3,7 +3,7 @@ package controller;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-//출력 뷰(OutPut) 처리 클래스
+//출력 뷰(OutPut)이동 처리 클래스
 public class HttpUtil {
 	public static void forward(HttpServletRequest req, HttpServletResponse res, String path) {	//사용자 정의 메소드 다른페이지로 이동하기 위한 기능
 		try {
