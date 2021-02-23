@@ -1,5 +1,6 @@
 package vo;
 
+//회원 정보 저장목적
 //id,passwd,name,mail 겟,셋
 
 public class MemberVO {

@@ -142,7 +142,7 @@ public class MemberDAO {
 		MemberVO member = null;
 		try {
 			conn = connect();
-			pstmt = conn.prepareStatement("select * from member");	//모두출력 query문
+			pstmt = conn.prepareStatement("select *from member");	//모두출력 query문
 			rs = pstmt.executeQuery();
 			while(rs.next()) {	//rs 가 true : 추출레코드 있음
 				// 새로 생성한 memberVO객체의 rs컬럼값들을 getter 메소드로 추출-> setter 메소드를 이용 MemberVO객체에 정보 바인딩
